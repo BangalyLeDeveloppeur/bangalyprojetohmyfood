@@ -1,0 +1,108 @@
+
+@font-face {
+    font-family: inter-bold;
+    src: url(/assets/fonts/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: merr;
+    src: url(/assets/fonts/Merriweather-Light.ttf);
+}
+$fonte1: inter-bold, sans-serif;
+$font2: merr,serif;
+
+$color1: rgb(153, 226,208);
+$color2: rgb(0,135,102);
+$color3: rgb(137,200,250);
+$color4: rgb(0,58,104);
+$color5: rgb(147,86,220);
+$colorbut: rgb(207, 115, 228);
+$color6: #ddd9d9;
+
+//mes mixins
+@mixin title {
+    font-family: $fonte1;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+
+
+}
+h1{
+    font-size: 2rem;
+    @include title;
+}
+*{
+    margin: 0;
+    padding: 0;
+  
+    
+}
+.btn {
+    background: $colorbut;
+    border-radius: 25px;
+    height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px;
+    font-size: 1.2rem;
+    color: rgba(252, 248, 248, 0.808);
+    cursor: pointer;
+    transition: 0.5s;
+
+     &:hover {
+        transform: scale(1.05);
+        color: white;
+        box-shadow: 4px 3px 3px rgb(180, 180, 180);
+     }
+}
+.main-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #F6F6F6;
+    border-radius: 25px;
+   position: relative;
+   box-shadow: 3px 3px 20px rgb(233, 227, 227);
+   transition: 0.5s;
+   cursor: pointer;
+
+   &:hover {
+
+    background: rgb(224, 215, 224);
+       transform: scale(1.06);
+       color: white;
+    }
+    
+}
+
+.main-icon{
+    height: 20px;
+    width: 20px;
+    background: $colorbut;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: row;
+    margin-left: -98%;
+}
+
+
+
+article{
+    width: 100%;
+}
+body{
+    font-family: $font2;
+    max-width: 768px;
+    width: 95%;
+    margin: auto;
+    
+}
+ 

@@ -1,0 +1,139 @@
+main{
+    
+    .main-reserver{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        background: #F6F6F6;
+        height: 350px;
+        
+
+        h1{
+            font-size: 1.3rem;
+            width: 60%;
+            
+        }
+        p{
+            font-size: 1.2em;
+            width: 90%;
+        }
+    }
+    .main-contenair{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        margin-bottom: 50px;
+       
+       
+        .main-menu .fa-solid{
+            color: grey;
+            
+        }
+       .main-degustez .fa-solid{
+        color: $colorbut;
+        
+      
+       }
+       
+       .main-btn .main-icon2{
+        display: flex;
+       align-items: center;
+       gap: 20px;
+       width: 90%;
+    }
+    }
+    .maint-contenair-title {
+      width: 30%;
+      margin: 30px 0 30px;
+       text-align: center;
+    }
+    .resto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 45px;
+       
+        .palette {
+            position: relative;
+            box-shadow: 3px 3px 20px rgb(233, 227, 227);
+            height: 255px;
+            border-radius: 20px 20px  10px 10px;
+            width: 100%;
+            
+            img {
+                height: 173px;
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+            }
+            .palette-nouveau {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 30px;
+                width:15%;
+                background: $color2 ; 
+                margin-left: 75%;
+                bottom: 151px;
+                
+                               
+            } 
+            .palette-menil{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px;
+            h1 {
+                font-size: 1.3em;
+                font-family: $font2;
+            }
+            .fa-solid{
+                display: none;
+            }
+                &:hover .coeur{
+                    .fa-solid{
+                        display: inline;
+                        cursor: pointer;
+                    }
+                    .fa-regular{
+                        display: none;
+                    }
+                }
+            }
+        }
+        
+    }
+    .sect-resto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #F6F6F6;
+        gap: 30px;
+        
+        .resto-t{
+            margin-top: 54px;
+            
+        }
+        
+      
+
+       
+    .title{
+       width: 95%;
+    }
+        
+    }
+    
+    .Fonctionnement{
+        margin: 70px 8px 70px 10px;
+
+        
+    }
+    
+    
+}
