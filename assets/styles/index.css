@@ -63,7 +63,7 @@ h1 {
   cursor: pointer;
 }
 .main-btn:hover {
-  background: rgb(224, 215, 224);
+  background: rgb(255, 162, 255);
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
   color: white;
@@ -186,10 +186,10 @@ main .main-contenair {
   gap: 25px;
   margin-bottom: 50px;
 }
-main .main-contenair .main-menu .fa-solid {
+main .main-contenair article .icongrey .fa-solid {
   color: grey;
 }
-main .main-contenair .main-degustez .fa-solid {
+main .main-contenair .main-icon2 .fa-solid {
   color: rgb(207, 115, 228);
 }
 main .main-contenair .main-btn .main-icon2 {
@@ -271,11 +271,11 @@ main .resto .palette .palette-menil h1 {
 main .resto .palette .palette-menil .fa-solid {
   display: none;
 }
-main .resto .palette .palette-menil:hover .coeur .fa-solid {
+main .resto .palette .palette-menil :hover.coeur .fa-solid {
   display: inline;
   cursor: pointer;
 }
-main .resto .palette .palette-menil:hover .coeur .fa-regular {
+main .resto .palette .palette-menil :hover.coeur .fa-regular {
   display: none;
 }
 main .sect-resto {
@@ -295,8 +295,9 @@ main .sect-resto {
   background: #F6F6F6;
   gap: 30px;
 }
-main .sect-resto .resto-t {
+main .sect-resto h2 {
   margin-top: 54px;
+  width: 100%;
 }
 main .sect-resto .title {
   width: 95%;
@@ -351,6 +352,18 @@ footer .img {
 @media only screen and (min-width: 1024px) {
   body {
     max-width: 1440px;
+    /*::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+       top: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(95, 90, 88, 0.692);
+        animation: animload 1.2s ease forwards ;
+        animation-delay: 0.15s;
+    }*/
   }
   header .header-contenair-location .fa-solid {
     margin-left: 5%;
@@ -391,6 +404,9 @@ footer .img {
   main .sect-resto .title {
     width: 100%;
   }
+  footer {
+    height: 100px;
+  }
   footer .menu-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -420,5 +436,15 @@ footer .img {
   }
   footer .menu-footer p {
     font-size: 0.8rem;
+  }
+}
+@-webkit-keyframes animload {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animload {
+  to {
+    opacity: 0;
   }
 }/*# sourceMappingURL=index.css.map */
