@@ -17,18 +17,18 @@
         body {
             max-width: 1440px;
 
-            /*::before {
+            &::before{
                 content: "";
                 position: absolute;
                 height: 100%;
                 width: 100%;
-               top: 0;
+                top: 0;
                 left: 0;
-                bottom: 0;
-                background: rgba(95, 90, 88, 0.692);
-                animation: animload 1.2s ease forwards ;
+                
+                background: rgba(10, 8, 7, 0.692);
+                animation: animload 2.5s ease forwards ;
                 animation-delay: 0.15s;
-            }*/ 
+            } 
         }
     header{
       .header-contenair-location .fa-solid{
@@ -52,16 +52,17 @@
             
         }
         .maint-contenair-title {
-            width: 21%;
+            width: 24%;
         }
         .main-contenair{
             flex-direction: row;
-            padding: 0 130px 0 63px;
-            gap: 50px;   
+            padding: 0 130px 0 83px;
+            gap: 50px;
+             
         }
         .resto{
             flex-direction: row;
-            gap: 130px;
+            gap: 80px;
         }
         .sect-resto{
             height: 500px;
@@ -77,12 +78,14 @@
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
-          padding-top: 50px;
-          gap: 50px;
+          padding-top: 34px;
+          gap: 100px;
+          margin-left: 0;
 
           .footer-ico{
             display: flex;
             flex-direction: row;
+            gap: 25px;
           }
     
           .img {

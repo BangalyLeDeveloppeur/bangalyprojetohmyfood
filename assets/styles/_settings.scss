@@ -28,10 +28,14 @@ $color6: #ddd9d9;
 
 
 }
+
+
+
 h1{
     font-size: 2rem;
     @include title;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -49,8 +53,10 @@ h1{
     color: rgba(252, 248, 248, 0.808);
     cursor: pointer;
     transition: 0.5s;
+    position: relative;
 
-     &:hover{
+
+    &:hover {
         transform: scale(1.05);
         color: white;
         box-shadow: 4px 3px 3px rgb(180, 180, 180);
@@ -65,14 +71,14 @@ h1{
     padding-right: 10px;
     background: #F6F6F6;
     border-radius: 25px;
-   position: relative;
+    position: relative;
    box-shadow: 3px 3px 20px rgb(233, 227, 227);
    transition: 0.5s;
    cursor: pointer;
 
    &:hover {
 
-    background: rgb(255, 162, 255);
+    background: rgba(247, 202, 247, 0.527);
        transform: scale(1.06);
        color: white;
     }
@@ -98,12 +104,14 @@ h1{
 article{
     width: 100%;
 }
-body{
+body {
     font-family: $font2;
     max-width: 768px;
     width: 95%;
     margin: auto;
-    
+
+
+   
  
 }
  

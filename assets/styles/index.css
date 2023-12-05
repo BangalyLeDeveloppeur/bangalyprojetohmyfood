@@ -31,6 +31,7 @@ h1 {
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  position: relative;
 }
 .btn:hover {
   -webkit-transform: scale(1.05);
@@ -63,7 +64,7 @@ h1 {
   cursor: pointer;
 }
 .main-btn:hover {
-  background: rgb(255, 162, 255);
+  background: rgba(247, 202, 247, 0.527);
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
   color: white;
@@ -166,10 +167,10 @@ main .main-reserver {
 }
 main .main-reserver h1 {
   font-size: 1.3rem;
-  width: 60%;
+  width: 63%;
 }
 main .main-reserver p {
-  font-size: 1.2em;
+  font-size: 1em;
   width: 90%;
 }
 main .main-contenair {
@@ -185,6 +186,7 @@ main .main-contenair {
           align-items: center;
   gap: 25px;
   margin-bottom: 50px;
+  padding: 20px;
 }
 main .main-contenair article .icongrey .fa-solid {
   color: grey;
@@ -352,18 +354,19 @@ footer .img {
 @media only screen and (min-width: 1024px) {
   body {
     max-width: 1440px;
-    /*::before {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-       top: 0;
-        left: 0;
-        bottom: 0;
-        background: rgba(95, 90, 88, 0.692);
-        animation: animload 1.2s ease forwards ;
-        animation-delay: 0.15s;
-    }*/
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(10, 8, 7, 0.692);
+    -webkit-animation: animload 2.5s ease forwards;
+            animation: animload 2.5s ease forwards;
+    -webkit-animation-delay: 0.15s;
+            animation-delay: 0.15s;
   }
   header .header-contenair-location .fa-solid {
     margin-left: 5%;
@@ -380,14 +383,14 @@ footer .img {
     margin: 0;
   }
   main .maint-contenair-title {
-    width: 21%;
+    width: 24%;
   }
   main .main-contenair {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 0 130px 0 63px;
+    padding: 0 130px 0 83px;
     gap: 50px;
   }
   main .resto {
@@ -395,7 +398,7 @@ footer .img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 130px;
+    gap: 80px;
   }
   main .sect-resto {
     height: 500px;
@@ -418,8 +421,9 @@ footer .img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
-    padding-top: 50px;
-    gap: 50px;
+    padding-top: 34px;
+    gap: 100px;
+    margin-left: 0;
   }
   footer .menu-footer .footer-ico {
     display: -webkit-box;
@@ -429,6 +433,7 @@ footer .img {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    gap: 25px;
   }
   footer .menu-footer .img {
     width: 12%;
