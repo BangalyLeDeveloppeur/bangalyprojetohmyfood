@@ -52,7 +52,7 @@
             
         }
         .maint-contenair-title {
-            width: 24%;
+            width: 27%;
         }
         .main-contenair{
             flex-direction: row;
@@ -65,15 +65,16 @@
             gap: 80px;
         }
         .sect-resto{
-            height: 500px;
+            height: 600px;
             padding: 87px;
             .title{
                 width: 100%;
             }
         }
     }
-    footer{
-        height: 100px;
+    footer {
+        height: 95px;
+        margin-top: 0;
         .menu-footer{ 
             display: flex;
             align-items: center;

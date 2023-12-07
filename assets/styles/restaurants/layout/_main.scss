@@ -7,7 +7,7 @@ main{
         align-items: center;
         gap: 25px;
         background: #F6F6F6;
-        height: 350px;
+        height: 255px;
         
 
         h1{
@@ -61,12 +61,12 @@ main{
         .palette {
             position: relative;
             box-shadow: 3px 3px 20px rgb(233, 227, 227);
-            height: 255px;
+            height: 281px;
             border-radius: 20px 20px  10px 10px;
             width: 100%;
             
             img {
-                height: 173px;
+                height: 200px;
                 width: 100%;
                 border-radius: 20px 20px 0 0;
                 object-fit: cover;
@@ -76,21 +76,25 @@ main{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                height: 30px;
-                width:15%;
-                background: $color2 ; 
+                height: 33px;
+                width: 18%;
+                background: #99E2D0; 
                 margin-left: 75%;
-                bottom: 151px;
+                bottom: 200px;
+                border-radius: 5px;
                 
-                               
+                  p{
+                    font-weight: bold;
+                    color: #64726e;
+                  }             
             } 
-            .palette-menil{
+            .palette-menil {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 16px;
             
-            
+
             h1 {
                 font-size: 1.3em;
                 font-family: $font2;
@@ -111,6 +115,10 @@ main{
                         
                     }
                 }
+                
+            }
+            .coeur i{
+                font-size: 2rem;
             }
         }
         

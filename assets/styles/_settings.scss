@@ -43,23 +43,26 @@ h1{
     
 }
 .btn{
-    background: $colorbut;
+    background: rgb(206,132,223);
+background: linear-gradient(0deg, rgba(206,132,223,1) 0%, rgba(251,93,207,1) 100%, rgba(186,148,230,1) 100%);
     border-radius: 25px;
     height: 50px;
     padding-left: 15px;
     padding-right: 15px;
     border: 5px;
     font-size: 1.2rem;
-    color: rgba(252, 248, 248, 0.808);
+    color: white;
     cursor: pointer;
     transition: 0.5s;
     position: relative;
 
 
     &:hover {
-        transform: scale(1.05);
-        color: white;
+
         box-shadow: 4px 3px 3px rgb(180, 180, 180);
+        transform: scale(1.05);
+
+        
      }
 }
 .main-btn{
@@ -79,10 +82,12 @@ h1{
    &:hover {
 
     background: rgba(247, 202, 247, 0.527);
-       transform: scale(1.06);
-       color: white;
+       transform: scale(1.02);
+       
     }
-    
+    p{
+      font-weight: bold; 
+    }
 }
 
 .main-icon{

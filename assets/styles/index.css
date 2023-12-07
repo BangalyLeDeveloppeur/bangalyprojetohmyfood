@@ -20,25 +20,26 @@ h1 {
 }
 
 .btn {
-  background: rgb(207, 115, 228);
+  background: rgb(206, 132, 223);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(206, 132, 223)), color-stop(100%, rgb(251, 93, 207)), to(rgb(186, 148, 230)));
+  background: linear-gradient(0deg, rgb(206, 132, 223) 0%, rgb(251, 93, 207) 100%, rgb(186, 148, 230) 100%);
   border-radius: 25px;
   height: 50px;
   padding-left: 15px;
   padding-right: 15px;
   border: 5px;
   font-size: 1.2rem;
-  color: rgba(252, 248, 248, 0.808);
+  color: white;
   cursor: pointer;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   position: relative;
 }
 .btn:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  color: white;
   -webkit-box-shadow: 4px 3px 3px rgb(180, 180, 180);
           box-shadow: 4px 3px 3px rgb(180, 180, 180);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .main-btn {
@@ -65,9 +66,11 @@ h1 {
 }
 .main-btn:hover {
   background: rgba(247, 202, 247, 0.527);
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
-  color: white;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+.main-btn p {
+  font-weight: bold;
 }
 
 .main-icon {
@@ -122,6 +125,7 @@ header .header-contenair {
 }
 header .header-contenair img {
   width: 50%;
+  padding: 17px;
 }
 header .header-contenair-location {
   display: -webkit-box;
@@ -142,9 +146,10 @@ header .header-contenair-location input {
   border: none;
   background: none;
   font-size: 16px;
+  font-weight: bold;
 }
 header .header-contenair-location .fa-solid {
-  margin-left: 10%;
+  margin-left: 25%;
 }
 
 main .main-reserver {
@@ -163,7 +168,7 @@ main .main-reserver {
           align-items: center;
   gap: 25px;
   background: #F6F6F6;
-  height: 350px;
+  height: 255px;
 }
 main .main-reserver h1 {
   font-size: 1.3rem;
@@ -226,12 +231,12 @@ main .resto .palette {
   position: relative;
   -webkit-box-shadow: 3px 3px 20px rgb(233, 227, 227);
           box-shadow: 3px 3px 20px rgb(233, 227, 227);
-  height: 255px;
+  height: 281px;
   border-radius: 20px 20px 10px 10px;
   width: 100%;
 }
 main .resto .palette img {
-  height: 173px;
+  height: 200px;
   width: 100%;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
@@ -248,11 +253,16 @@ main .resto .palette .palette-nouveau {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30px;
-  width: 15%;
-  background: rgb(0, 135, 102);
+  height: 33px;
+  width: 18%;
+  background: #99E2D0;
   margin-left: 75%;
-  bottom: 151px;
+  bottom: 200px;
+  border-radius: 5px;
+}
+main .resto .palette .palette-nouveau p {
+  font-weight: bold;
+  color: #64726e;
 }
 main .resto .palette .palette-menil {
   display: -webkit-box;
@@ -279,6 +289,9 @@ main .resto .palette .palette-menil :hover.coeur .fa-solid {
 }
 main .resto .palette .palette-menil :hover.coeur .fa-regular {
   display: none;
+}
+main .resto .palette .coeur i {
+  font-size: 2rem;
 }
 main .sect-resto {
   display: -webkit-box;
@@ -383,7 +396,7 @@ footer .img {
     margin: 0;
   }
   main .maint-contenair-title {
-    width: 24%;
+    width: 27%;
   }
   main .main-contenair {
     -webkit-box-orient: horizontal;
@@ -401,14 +414,15 @@ footer .img {
     gap: 80px;
   }
   main .sect-resto {
-    height: 500px;
+    height: 600px;
     padding: 87px;
   }
   main .sect-resto .title {
     width: 100%;
   }
   footer {
-    height: 100px;
+    height: 95px;
+    margin-top: 0;
   }
   footer .menu-footer {
     display: -webkit-box;
