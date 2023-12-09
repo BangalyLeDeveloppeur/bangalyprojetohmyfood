@@ -64,11 +64,16 @@ main{
         background: rgb(255, 255, 255);
         margin-bottom: 10px;
         border-radius: 20px;
-        
+        margin-top: 20px;
+
+       
        
 
         .select-choix {
             display: none;
+        }
+        .prix p {
+            @include title
         }
     }
     .commande{

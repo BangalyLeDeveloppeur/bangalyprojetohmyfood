@@ -188,9 +188,16 @@ main .article-menu {
   background: rgb(255, 255, 255);
   margin-bottom: 10px;
   border-radius: 20px;
+  margin-top: 20px;
 }
 main .article-menu .select-choix {
   display: none;
+}
+main .article-menu .prix p {
+  font-family: inter-bold, sans-serif;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 main .commande {
   display: -webkit-box;
