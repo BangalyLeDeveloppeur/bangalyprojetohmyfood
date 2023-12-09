@@ -1,5 +1,5 @@
 main{
-    height: 1400px;
+    height: 1500px;
     .menu-container{
         background: rgb(246, 246, 246);
        position: relative;
@@ -9,6 +9,10 @@ main{
 
          .articles{
             border: none;
+
+            h3 {
+              font-weight: normal;  
+            }
         }
     }
     .restau-image{
@@ -22,12 +26,13 @@ main{
         justify-content: space-between;
         align-items: center;
         padding: 47px 13px;
+
         .icone-coeur .fa-solid{
             display: none;
         }
        
         
-
+        
     }
     :hover.icone-coeur{
         .fa-solid{
@@ -66,9 +71,11 @@ main{
         border-radius: 20px;
         margin-top: 20px;
 
+        
         h4 {
-            font-size: 1.5rem;
-            @include title
+            font-size: 1.1rem;
+            @include title;
+            
             
         }
        
@@ -77,7 +84,9 @@ main{
             display: none;
         }
         .prix p {
-            @include title
+            @include title;
+
+            
         }
     }
     .commande{
@@ -92,9 +101,10 @@ main{
     }
     .description{
         margin-left: 15px;
+        line-height: 1.5;
     }
     .prix{
-        margin-right: 15px;
+        margin: 19px 10px 0;
     }
    
 }

@@ -123,7 +123,7 @@ header .logo {
 }
 
 main {
-  height: 1400px;
+  height: 1500px;
 }
 main .menu-container {
   background: rgb(246, 246, 246);
@@ -134,6 +134,9 @@ main .menu-container {
 }
 main .menu-container .articles {
   border: none;
+}
+main .menu-container .articles h3 {
+  font-weight: normal;
 }
 main .restau-image {
   height: 280px;
@@ -191,7 +194,7 @@ main .article-menu {
   margin-top: 20px;
 }
 main .article-menu h4 {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   font-family: inter-bold, sans-serif;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -223,9 +226,10 @@ main .commande p {
 }
 main .description {
   margin-left: 15px;
+  line-height: 1.5;
 }
 main .prix {
-  margin-right: 15px;
+  margin: 19px 10px 0;
 }
 
 footer {
