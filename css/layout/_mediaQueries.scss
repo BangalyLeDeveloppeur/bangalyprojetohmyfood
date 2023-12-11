@@ -1,0 +1,15 @@
+@media only screen and (min-width: 1024px){
+    body{
+       max-width: 1440px;
+    }
+
+    .menu-container{
+       margin: 0 160px;
+        .titre-menu {
+            padding: 47px 340px;
+        }
+        .menus {
+            padding: 0 180px;
+        }
+    }
+}

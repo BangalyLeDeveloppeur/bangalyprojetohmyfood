@@ -1,5 +1,12 @@
 main{
-    height: 1500px;
+    .entrees {
+        margin: 0 0 53px;
+    }
+    .plats {
+        margin: 0 0 53px;
+    }
+    height: 1605px;
+
     .menu-container{
         background: rgb(246, 246, 246);
        position: relative;
@@ -9,6 +16,7 @@ main{
 
          .articles{
             border: none;
+            margin: 20px 0 0 0;
 
             h3 {
               font-weight: normal;  
@@ -16,7 +24,7 @@ main{
         }
     }
     .restau-image{
-        height: 280px;
+        height: 286px;
         width: 95%;
         position: absolute;
        
@@ -57,7 +65,7 @@ main{
     }
     .bar-souligne{
         width: 56px;
-        height: 5px;
+        height: 4px;
         background: #99E2D0;
         margin: 3px; 
     }
@@ -65,7 +73,7 @@ main{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
+        height: 75px;
         background: rgb(255, 255, 255);
         margin-bottom: 10px;
         border-radius: 20px;
@@ -95,7 +103,7 @@ main{
         align-items: center;
         margin: 73px;
         p{
-            font-size: 2rem;
+            font-size: 1.4rem;
         }
 
     }
