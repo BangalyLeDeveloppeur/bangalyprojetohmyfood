@@ -123,7 +123,7 @@ header .logo {
 }
 
 main {
-  height: 1605px;
+  height: 1545px;
 }
 main .entrees {
   margin: 0 0 53px;
@@ -134,9 +134,8 @@ main .plats {
 main .menu-container {
   background: rgb(246, 246, 246);
   position: relative;
-  top: 220px;
+  top: 226px;
   border-radius: 50px 50px 0 0;
-  padding: 5px;
 }
 main .menu-container .articles {
   border: none;
@@ -145,10 +144,12 @@ main .menu-container .articles {
 main .menu-container .articles h3 {
   font-weight: normal;
 }
-main .restau-image {
+main img {
   height: 286px;
   width: 95%;
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .titre-menu {
   display: -webkit-box;
@@ -226,10 +227,7 @@ main .commande {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 73px;
-}
-main .commande p {
-  font-size: 1.4rem;
+  margin: 33px;
 }
 main .description {
   margin-left: 15px;
@@ -243,7 +241,6 @@ footer {
   background: rgb(53, 53, 53);
   height: 251px;
   line-height: 25px;
-  margin-top: 64px;
 }
 footer .menu-footer {
   color: white;
@@ -273,7 +270,6 @@ footer .img {
 }
 
 .articles .article-menu {
-  text-transform: uppercase;
   color: transparent;
   font-size: 0px;
   font-weight: 900;
@@ -372,18 +368,33 @@ footer .img {
   body {
     max-width: 1440px;
   }
-  .menu-container {
+  body header .logo {
+    width: 60%;
+    margin-left: -27px;
+    gap: 459px;
+  }
+  main {
+    height: 1716px;
+  }
+  main img {
+    height: 426px;
+    width: 95%;
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .menu-container {
     margin: 0 160px;
+    top: 394px;
   }
-  .menu-container .titre-menu {
-    padding: 47px 340px;
+  main .menu-container .titre-menu {
+    padding: 47px 309px;
   }
-  .menu-container .menus {
+  main .menu-container .menus {
     padding: 0 180px;
   }
   footer {
     height: 95px;
-    margin-top: 0;
   }
   footer .menu-footer {
     display: -webkit-box;
@@ -397,7 +408,7 @@ footer .img {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     padding-top: 34px;
-    gap: 100px;
+    gap: 50px;
     margin-left: 0;
   }
   footer .menu-footer .footer-ico {

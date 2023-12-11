@@ -1,27 +1,51 @@
 @media only screen and (min-width: 1024px){
-    body{
+    body {
        max-width: 1440px;
+
+       header {
+        .logo{
+            width: 60%;
+            margin-left: -27px;
+            gap: 459px;
+        }
+       }
     }
 
+    main {
+        height: 1716px;
+        img{
+            height: 426px;
+            width: 95%;
+            position: absolute;
+            object-fit: cover;
+           
+        }
+    
     .menu-container{
        margin: 0 160px;
+       top: 394px;
+       
+       
+
         .titre-menu {
-            padding: 47px 340px;
+            padding: 47px 309px;
         }
         .menus {
             padding: 0 180px;
         }
+        
     }
+}
 
     footer {
         height: 95px;
-        margin-top: 0;
+       
         .menu-footer{ 
             display: flex;
             align-items: center;
             flex-direction: row-reverse;
           padding-top: 34px;
-          gap: 100px;
+          gap: 50px;
           margin-left: 0;
 
           .footer-ico{

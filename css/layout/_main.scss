@@ -1,18 +1,18 @@
-main{
+main {
     .entrees {
         margin: 0 0 53px;
     }
     .plats {
         margin: 0 0 53px;
     }
-    height: 1605px;
+    height: 1545px;
 
-    .menu-container{
+    .menu-container {
         background: rgb(246, 246, 246);
        position: relative;
-        top: 220px;
+        top: 226px;
         border-radius: 50px 50px 0 0;
-        padding: 5px;
+        
 
          .articles{
             border: none;
@@ -23,10 +23,11 @@ main{
             }
         }
     }
-    .restau-image{
+    img {
         height: 286px;
         width: 95%;
         position: absolute;
+        object-fit: cover;
        
     }
     .titre-menu {
@@ -35,7 +36,7 @@ main{
         align-items: center;
         padding: 47px 13px;
 
-        .icone-coeur .fa-solid{
+        .icone-coeur .fa-solid {
             display: none;
         }
        
@@ -97,14 +98,12 @@ main{
             
         }
     }
-    .commande{
+    .commande {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 73px;
-        p{
-            font-size: 1.4rem;
-        }
+        margin: 33px;
+        
 
     }
     .description{
