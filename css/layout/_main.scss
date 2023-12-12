@@ -79,25 +79,66 @@ main {
         margin-bottom: 10px;
         border-radius: 20px;
         margin-top: 20px;
+        cursor: pointer;
+
 
         
         h4 {
             font-size: 1.1rem;
             @include title;
-            
-            
-        }
-       
 
-        .select-choix {
-            display: none;
+
         }
-        .prix p {
+        .prix {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+          
+           p {
             @include title;
 
+
+        }
+        .select-choix {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 60px;
+            height: 73px;
+            background: rgb(153, 226, 208);
+           display: none;
+
+           .fa-solid{
+                font-size: 2rem;
+                color: white;
+                border: 1px solid;
+                
+            }
             
         }
+
+
+
+        }
+        &:hover {
+           .select-choix {
+            display: inline;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+           }
+        .fa-solid {
+                font-size: 2rem;
+                color: white;
+               
+            }
+        }
     }
+
+
     .commande {
         display: flex;
         justify-content: center;
@@ -110,8 +151,7 @@ main {
         margin-left: 15px;
         line-height: 1.5;
     }
-    .prix{
-        margin: 19px 10px 0;
-    }
-   
+
+
+
 }

@@ -200,6 +200,7 @@ main .article-menu {
   margin-bottom: 10px;
   border-radius: 20px;
   margin-top: 20px;
+  cursor: pointer;
 }
 main .article-menu h4 {
   font-size: 1.1rem;
@@ -208,14 +209,59 @@ main .article-menu h4 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-main .article-menu .select-choix {
-  display: none;
+main .article-menu .prix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
 }
 main .article-menu .prix p {
   font-family: inter-bold, sans-serif;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+main .article-menu .prix .select-choix {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 60px;
+  height: 73px;
+  background: rgb(153, 226, 208);
+  display: none;
+}
+main .article-menu .prix .select-choix .fa-solid {
+  font-size: 2rem;
+  color: white;
+  border: 1px solid;
+}
+main .article-menu:hover .select-choix {
+  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .article-menu:hover .fa-solid {
+  font-size: 2rem;
+  color: white;
 }
 main .commande {
   display: -webkit-box;
@@ -232,9 +278,6 @@ main .commande {
 main .description {
   margin-left: 15px;
   line-height: 1.5;
-}
-main .prix {
-  margin: 19px 10px 0;
 }
 
 footer {
@@ -374,21 +417,21 @@ footer .img {
     gap: 459px;
   }
   main {
-    height: 1716px;
+    height: 1736px;
   }
   main img {
     height: 426px;
-    width: 95%;
+    width: 76%;
     position: absolute;
     -o-object-fit: cover;
        object-fit: cover;
   }
   main .menu-container {
     margin: 0 160px;
-    top: 394px;
+    top: 415px;
   }
   main .menu-container .titre-menu {
-    padding: 47px 309px;
+    padding: 47px 379px;
   }
   main .menu-container .menus {
     padding: 0 180px;
