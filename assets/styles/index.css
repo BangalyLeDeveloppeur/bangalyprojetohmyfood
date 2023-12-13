@@ -6,6 +6,10 @@
   font-family: merr;
   src: url(/assets/fonts/Merriweather-Light.ttf);
 }
+a {
+  color: black;
+}
+
 h1 {
   font-size: 2rem;
   font-family: inter-bold, sans-serif;
@@ -264,6 +268,9 @@ main .resto .palette .palette-nouveau p {
   font-weight: bold;
   color: #64726e;
 }
+main .resto .palette .palette-nouveau a {
+  text-decoration: none;
+}
 main .resto .palette .palette-menil {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -275,6 +282,9 @@ main .resto .palette .palette-menil {
       -ms-flex-align: center;
           align-items: center;
   padding: 16px;
+}
+main .resto .palette .palette-menil a {
+  text-decoration: none;
 }
 main .resto .palette .palette-menil h1 {
   font-size: 1.3em;
