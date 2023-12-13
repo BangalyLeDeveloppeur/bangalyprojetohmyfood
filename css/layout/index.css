@@ -119,7 +119,7 @@ header .logo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5px;
+  margin-left: -25px;
 }
 
 main {
@@ -136,6 +136,7 @@ main .menu-container {
   position: relative;
   top: 226px;
   border-radius: 50px 50px 0 0;
+  padding: 0 10px;
 }
 main .menu-container .articles {
   border: none;
@@ -226,6 +227,7 @@ main .article-menu .prix p {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding: 19px 9px 0 0;
 }
 main .article-menu .prix .select-choix {
   display: -webkit-box;
@@ -323,7 +325,7 @@ footer .img {
   display: flex;
   position: relative;
   overflow: hidden;
-  font-size: clamp(2px, 8vw, 12px);
+  font-size: clamp(2px, 8vw, 15px);
 }
 .articles .article-menu p::after {
   content: "";

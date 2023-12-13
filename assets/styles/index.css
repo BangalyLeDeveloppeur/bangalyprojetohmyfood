@@ -263,6 +263,8 @@ main .resto .palette .palette-nouveau {
   margin-left: 75%;
   bottom: 200px;
   border-radius: 5px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 main .resto .palette .palette-nouveau p {
   font-weight: bold;
@@ -302,6 +304,10 @@ main .resto .palette .palette-menil :hover.coeur .fa-regular {
 }
 main .resto .palette .coeur i {
   font-size: 2rem;
+}
+main .resto .palette:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 main .sect-resto {
   display: -webkit-box;

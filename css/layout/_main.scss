@@ -12,6 +12,7 @@ main {
        position: relative;
         top: 226px;
         border-radius: 50px 50px 0 0;
+        padding: 0 10px;
         
 
          .articles{
@@ -94,10 +95,12 @@ main {
             justify-content: center;
             align-items: center;
             gap: 20px;
+           
 
           
            p {
             @include title;
+            padding: 19px 9px 0 0;
 
 
         }
