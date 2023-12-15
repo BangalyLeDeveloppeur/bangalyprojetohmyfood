@@ -10,6 +10,12 @@
 $fonte1: inter-bold, sans-serif;
 $font2: merr,serif;
 
+/* les couleurs */
+$colorprimaire: #9356DC;
+$colorsecondaire:#FF79DA;
+$colortertiaire:#99E2D0;
+
+
 $color1: rgb(153, 226,208);
 $color2: rgb(0,135,102);
 $color3: rgb(137,200,250);
@@ -79,11 +85,12 @@ background: linear-gradient(0deg, rgba(206,132,223,1) 0%, rgba(251,93,207,1) 100
     position: relative;
    box-shadow: 3px 3px 20px rgb(233, 227, 227);
    transition: 0.5s;
+   transition-duration: 0.75s;
    cursor: pointer;
 
    &:hover {
 
-    background: rgba(247, 202, 247, 0.527);
+    background: $colortertiaire;
        transform: scale(1.02);
        
     }

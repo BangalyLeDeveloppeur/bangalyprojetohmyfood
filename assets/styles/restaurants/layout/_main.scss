@@ -112,6 +112,7 @@ main{
                 display: none;
                 
             }
+
                 :hover.coeur{
                     
                     .fa-solid{
@@ -128,9 +129,12 @@ main{
             }
             .coeur i{
                 font-size: 2rem;
+                transition: 0.5s;
+                transition-duration: 1s;
+                
             }
             &:hover {
-                transform: scale(1.02);
+                transform: scale(1.01);
         
                 
              }

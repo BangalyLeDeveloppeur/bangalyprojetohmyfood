@@ -6,6 +6,7 @@
   font-family: merr;
   src: url(/assets/fonts/Merriweather-Light.ttf);
 }
+/* les couleurs */
 a {
   color: black;
 }
@@ -66,10 +67,12 @@ h1 {
           box-shadow: 3px 3px 20px rgb(233, 227, 227);
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
   cursor: pointer;
 }
 .main-btn:hover {
-  background: rgba(247, 202, 247, 0.527);
+  background: #99E2D0;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }
@@ -304,10 +307,14 @@ main .resto .palette .palette-menil :hover.coeur .fa-regular {
 }
 main .resto .palette .coeur i {
   font-size: 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 main .resto .palette:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 main .sect-resto {
   display: -webkit-box;
