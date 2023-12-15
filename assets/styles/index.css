@@ -307,8 +307,8 @@ main .resto .palette .palette-menil :hover.coeur .fa-regular {
 }
 main .resto .palette .coeur i {
   font-size: 2rem;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.75s;
+  transition: 0.75s;
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
