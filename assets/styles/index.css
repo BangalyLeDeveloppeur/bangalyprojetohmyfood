@@ -43,10 +43,12 @@ h1 {
           filter: brightness(1.1);
 }
 .btn:hover {
-  -webkit-box-shadow: 4px 3px 3px rgb(180, 180, 180);
-          box-shadow: 4px 3px 3px rgb(180, 180, 180);
+  -webkit-box-shadow: 4px 4px 4px rgb(180, 180, 180);
+          box-shadow: 4px 4px 4px rgb(180, 180, 180);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .main-btn {
@@ -114,6 +116,20 @@ body {
   max-width: 768px;
   width: 95%;
   margin: auto;
+}
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(19, 17, 16, 0.753);
+  -webkit-animation: animload 4s ease forwards;
+          animation: animload 4s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 header .header-contenair-logo {
@@ -392,21 +408,6 @@ footer .img {
 @media only screen and (min-width: 1024px) {
   body {
     max-width: 1440px;
-    /*
-    &::before{
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 1;
-
-        background: rgba(19, 17, 16, 0.753);
-        animation: animload 4s ease forwards ;
-        animation-delay: 2s;
-    } 
-    */
   }
   header .header-contenair-location .fa-solid {
     margin-left: 5%;
@@ -494,22 +495,29 @@ footer .img {
     opacity: 0;
   }
 }
-/*
 .custom-loader {
-    width:50px;
-    height:12px;
-    top: 450px;
-    margin-left: 50%;
-    position: absolute;
-    background: radial-gradient(circle closest-side,#766DF4 90%,#0000) 0 0/33% 100% space;
-    clip-path: inset(0 100% 0 0);
-    animation:d1 1.5s steps(4) forwards;
-
-  }
-
-  @keyframes d1 {
-    0%{clip-path: inset(0 -34% 0 0)}
-
-
+  width: 50px;
+  height: 12px;
+  top: 450px;
+  margin-left: 35%;
+  position: absolute;
+  background: radial-gradient(circle closest-side, #766DF4 90%, rgba(0, 0, 0, 0)) 0 0/33% 100% space;
+  -webkit-clip-path: inset(0 100% 0 0);
+          clip-path: inset(0 100% 0 0);
+  -webkit-animation: d1 2.5s steps(4) forwards;
+          animation: d1 2.5s steps(4) forwards;
 }
-*//*# sourceMappingURL=index.css.map */
+
+@-webkit-keyframes d1 {
+  0% {
+    -webkit-clip-path: inset(0 -34% 0 0);
+            clip-path: inset(0 -34% 0 0);
+  }
+}
+
+@keyframes d1 {
+  0% {
+    -webkit-clip-path: inset(0 -34% 0 0);
+            clip-path: inset(0 -34% 0 0);
+  }
+}/*# sourceMappingURL=index.css.map */

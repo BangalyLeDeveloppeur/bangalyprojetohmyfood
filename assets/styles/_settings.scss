@@ -78,8 +78,9 @@ $colorsecondaire 100%,
 
     &:hover {
 
-        box-shadow: 4px 3px 3px rgb(180, 180, 180);
+        box-shadow: 4px 4px 4px rgb(180, 180, 180);
         transform: scale(1.05);
+        filter: brightness(1.2);
 
         
      }
@@ -136,7 +137,20 @@ body {
     width: 95%;
     margin: auto;
 
-
+            &::before{
+                content: "";
+                position:absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                
+                background: rgba(19, 17, 16, 0.753);
+                animation: animload 4s ease forwards ;
+                animation-delay: 2s;
+            } 
+            
    
  
 }
