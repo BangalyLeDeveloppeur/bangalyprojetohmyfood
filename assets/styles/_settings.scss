@@ -52,7 +52,16 @@ h1{
 }
 .btn{
     background: rgb(206,132,223);
-background: linear-gradient(0deg, rgba(206,132,223,1) 0%, rgba(251,93,207,1) 100%, rgba(186,148,230,1) 100%);
+background: linear-gradient(0deg,
+
+
+
+$colorprimaire 2%,
+$colorsecondaire 100%, 
+ $colortertiaire 60%,
+ 
+ );
+
     border-radius: 25px;
     height: 52px;
     padding-left: 20px;
@@ -63,7 +72,9 @@ background: linear-gradient(0deg, rgba(206,132,223,1) 0%, rgba(251,93,207,1) 100
     cursor: pointer;
     transition: 0.5s;
     position: relative;
-
+    filter: brightness(1.1);
+    
+   
 
     &:hover {
 
@@ -87,6 +98,7 @@ background: linear-gradient(0deg, rgba(206,132,223,1) 0%, rgba(251,93,207,1) 100
    transition: 0.5s;
    transition-duration: 0.75s;
    cursor: pointer;
+   
 
    &:hover {
 

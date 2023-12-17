@@ -114,6 +114,7 @@ main {
             opacity: 0;
             background: rgb(153, 226, 208);
            transition: transform 0.50s ease-in-out;
+           transition-duration: 0.20s;
            
            .fa-solid{
                 font-size: 2rem;
@@ -131,7 +132,7 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
-            transform: translateX(-5%);
+            transform: translateX(-4%);
             opacity: 1;
             margin-right: 0;
            }

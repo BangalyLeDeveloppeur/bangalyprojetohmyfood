@@ -247,6 +247,8 @@ main .article-menu .prix .select-choix {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 main .article-menu .prix .select-choix .fa-solid {
   font-size: 2rem;
@@ -265,8 +267,8 @@ main .article-menu:hover .select-choix, main .article-menu :active .select-choix
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
+  -webkit-transform: translateX(-4%);
+          transform: translateX(-4%);
   opacity: 1;
   margin-right: 0;
 }
