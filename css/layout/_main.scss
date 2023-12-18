@@ -81,6 +81,7 @@ main {
         border-radius: 20px;
         margin-top: 20px;
         cursor: pointer;
+       
 
 
         
@@ -109,18 +110,19 @@ main {
             justify-content: center;
             align-items: center;
             width: 70px;
-            margin-right: -50px;
+            display: none;
             height: 73px;
-            opacity: 0;
+           
             background: rgb(153, 226, 208);
            transition: transform 0.50s ease-in-out;
            transition-duration: 0.20s;
            
            .fa-solid{
                 font-size: 2rem;
-                background: white;
+                
                 border: none;
                 border-radius: 15px;
+        
                 
             }
         }
@@ -133,7 +135,7 @@ main {
             justify-content: center;
             align-items: center;
             transform: translateX(-4%);
-            opacity: 1;
+
             margin-right: 0;
            }
 
@@ -160,6 +162,8 @@ main {
     .description{
         margin-left: 15px;
         line-height: 1.5;
+       
+        
      
           }
 

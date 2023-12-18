@@ -90,7 +90,7 @@ main{
                   }  
                   a {
                     text-decoration: none;
-                    
+               
                   }     
             } 
             
@@ -112,27 +112,27 @@ main{
                 display: none;
                 
             }
-
-                :hover.coeur{
+            .coeur {
+                font-size: 2rem;
+                transition: 3s;
+                
+                
+                &:hover{
                     
                     .fa-solid{
                         display: inline;
                         cursor: pointer;
-                        
+
                     }
                     .fa-regular{
                         display: none;
-                        
                     }
                 }
-                
             }
-            .coeur i{
-                font-size: 2rem;
-                transition: 0.75s;
-                transition-duration: 1s;
-                
+
             }
+            
+
             &:hover {
                 transform: scale(1.01);
         

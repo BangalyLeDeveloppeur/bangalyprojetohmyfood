@@ -29,7 +29,7 @@ h1 {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #9356DC), color-stop(100%, #FF79DA), color-stop(60%, #99E2D0));
   background: linear-gradient(0deg, #9356DC 2%, #FF79DA 100%, #99E2D0 60%);
   border-radius: 25px;
-  height: 52px;
+  height: 50px;
   padding-left: 20px;
   padding-right: 20px;
   border: 5px;
@@ -316,19 +316,17 @@ main .resto .palette .palette-menil h1 {
 main .resto .palette .palette-menil .fa-solid {
   display: none;
 }
-main .resto .palette .palette-menil :hover.coeur .fa-solid {
+main .resto .palette .palette-menil .coeur {
+  font-size: 2rem;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+main .resto .palette .palette-menil .coeur:hover .fa-solid {
   display: inline;
   cursor: pointer;
 }
-main .resto .palette .palette-menil :hover.coeur .fa-regular {
+main .resto .palette .palette-menil .coeur:hover .fa-regular {
   display: none;
-}
-main .resto .palette .coeur i {
-  font-size: 2rem;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
 }
 main .resto .palette:hover {
   -webkit-transform: scale(1.01);

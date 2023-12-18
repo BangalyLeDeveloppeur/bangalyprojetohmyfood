@@ -1,5 +1,71 @@
 
+#menu_1{
+    animation: apparition 400ms ease-in;
+   
+  }
+  
+  #menu_2 {
+    animation: apparition 600ms ease-in;
+  }
+  
+  #menu_3{
+    animation: apparition 800ms ease-in;
+  }
+  
+  #menu_4 {
+    animation: apparition 1s ease-in;
+  }
+  #menu_5 {
+    animation: apparition 1.2s ease-in;
+  }
+  #menu_6 {
+    animation: apparition 1.4s ease-in;
+  }
+  
+  #menu_7 {
+    animation: apparition 1.6s ease-in;
+  }
+  #menu_8 {
+    animation: apparition 1.8s ease-in;
+  }
+  #menu_9 {
+    animation: apparition 2s ease-in;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
+  @keyframes effet-opacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes apparition {
+    0% {
+      opacity: 0;
+      transform: translatex(-400px);
+    }
+    to {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+  
+
+
+
+
+/*
 .articles{
     
 
@@ -90,7 +156,7 @@
     }
     
 } 
-
+*/
 
  
  
