@@ -6,6 +6,7 @@
   font-family: merr;
   src: url(/assets/fonts/Merriweather-Light.ttf);
 }
+/* les couleurs */
 h1 {
   font-size: 2rem;
   font-family: inter-bold, sans-serif;
@@ -124,6 +125,9 @@ header .logo {
 
 main {
   height: 1567px;
+  /*code pour coeur */
+  /* code au clic */
+  /* code pour article-menu */
 }
 main .entrees {
   margin: 0 0 53px;
@@ -174,6 +178,13 @@ main :hover.icone-coeur .fa-solid {
 main :hover.icone-coeur .fa-regular {
   display: none;
 }
+main :active .icone-coeur .fa-solid {
+  display: inline;
+  cursor: pointer;
+}
+main :active .icone-coeur .fa-regular {
+  display: none;
+}
 main .icone-coeur {
   font-size: 2rem;
 }
@@ -202,6 +213,20 @@ main .article-menu {
   border-radius: 20px;
   margin-top: 20px;
   cursor: pointer;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  /* le code sur check */
+}
+main .article-menu:hover .prix, main .article-menu :active .prix {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+main .article-menu:hover .prix .select-choix, main .article-menu :active .prix .select-choix {
+  display: inline;
 }
 main .article-menu h4 {
   font-size: 1.1rem;
@@ -220,6 +245,7 @@ main .article-menu .prix {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* code pour le input choix */
 }
 main .article-menu .prix p {
   font-family: inter-bold, sans-serif;
@@ -229,47 +255,26 @@ main .article-menu .prix p {
   padding: 19px 9px 0 0;
 }
 main .article-menu .prix .select-choix {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 70px;
-  display: none;
   height: 73px;
-  background: rgb(153, 226, 208);
+  display: none;
+  background: #99E2D0;
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  margin-right: -50px;
 }
 main .article-menu .prix .select-choix .fa-solid {
-  font-size: 2rem;
-  border: none;
-  border-radius: 15px;
-}
-main .article-menu:hover .select-choix, main .article-menu :active .select-choix {
-  display: inline;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transform: translateX(-4%);
-          transform: translateX(-4%);
-  margin-right: 0;
-}
-main .article-menu:hover .fa-solid, main .article-menu :active .fa-solid {
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
   font-size: 2rem;
   color: white;
 }
@@ -323,203 +328,79 @@ footer .img {
 }
 
 #menu_1 {
-  -webkit-animation: apparition 400ms ease-in;
-          animation: apparition 400ms ease-in;
+  -webkit-animation: article-menu 400ms ease-in;
+          animation: article-menu 400ms ease-in;
 }
 
 #menu_2 {
-  -webkit-animation: apparition 600ms ease-in;
-          animation: apparition 600ms ease-in;
+  -webkit-animation: article-menu 600ms ease-in;
+          animation: article-menu 600ms ease-in;
 }
 
 #menu_3 {
-  -webkit-animation: apparition 800ms ease-in;
-          animation: apparition 800ms ease-in;
+  -webkit-animation: article-menu 800ms ease-in;
+          animation: article-menu 800ms ease-in;
 }
 
 #menu_4 {
-  -webkit-animation: apparition 1s ease-in;
-          animation: apparition 1s ease-in;
+  -webkit-animation: article-menu 1s ease-in;
+          animation: article-menu 1s ease-in;
 }
 
 #menu_5 {
-  -webkit-animation: apparition 1.2s ease-in;
-          animation: apparition 1.2s ease-in;
+  -webkit-animation: article-menu 1.2s ease-in;
+          animation: article-menu 1.2s ease-in;
 }
 
 #menu_6 {
-  -webkit-animation: apparition 1.4s ease-in;
-          animation: apparition 1.4s ease-in;
+  -webkit-animation: article-menu 1.4s ease-in;
+          animation: article-menu 1.4s ease-in;
 }
 
 #menu_7 {
-  -webkit-animation: apparition 1.6s ease-in;
-          animation: apparition 1.6s ease-in;
+  -webkit-animation: article-menu 1.6s ease-in;
+          animation: article-menu 1.6s ease-in;
 }
 
 #menu_8 {
-  -webkit-animation: apparition 1.8s ease-in;
-          animation: apparition 1.8s ease-in;
+  -webkit-animation: article-menun 1.8s ease-in;
+          animation: article-menun 1.8s ease-in;
 }
 
 #menu_9 {
-  -webkit-animation: apparition 2s ease-in;
-          animation: apparition 2s ease-in;
+  -webkit-animation: article-menu 2s ease-in;
+          animation: article-menu 2s ease-in;
 }
 
-@-webkit-keyframes spin {
+@-webkit-keyframes article-menu {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes effet-opacity {
-  0% {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     opacity: 0;
+    -webkit-transform: translatey(60px);
+            transform: translatey(60px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
   }
 }
-@keyframes effet-opacity {
+
+@keyframes article-menu {
   0% {
+    -webkit-animation-delay: 1.5s;
+            animation-delay: 1.5s;
     opacity: 0;
+    -webkit-transform: translatey(60px);
+            transform: translatey(60px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translatey(0);
+            transform: translatey(0);
   }
 }
-@-webkit-keyframes apparition {
-  0% {
-    opacity: 0;
-    -webkit-transform: translatex(-400px);
-            transform: translatex(-400px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translatex(0);
-            transform: translatex(0);
-  }
-}
-@keyframes apparition {
-  0% {
-    opacity: 0;
-    -webkit-transform: translatex(-400px);
-            transform: translatex(-400px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translatex(0);
-            transform: translatex(0);
-  }
-}
-/*
-.articles{
-
-
-
-
-    .article-menu {
-
-       color: transparent; 
-       font-size: 0px;
-        font-weight: 900;
-
-    }
-    .article-menu {
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        font-size: clamp(2px, 8vw, 15px);
-
-
-    }
-
-    .article-menu p::after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        transform: translatey(100%);
-
-
-    }
-    .article-menu h4::after {
-        content: "";
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        transform: translatey(100%);
-
-    }
-    .article-menu :nth-child(1) {
-        font-weight: 300;
-        animation: text-appearance 0.75s 1s forwards;
-
-
-    }
-    .article-menu :nth-child(2) {
-        font-weight: 300;
-        animation: text-appearance 0s 1.25s forwards;
-    }
-    .article-menu :nth-child(3) {
-        font-weight: 300;
-        animation: text-appearance 0s 1.25s forwards;
-    }
-
-    .article-menu :nth-child(1) h4::after{
-
-        animation: slide-in 0.75s 0.7s ease-in-out forwards, slide-out 0.75s 1s ease-in-out forwards;
-
-    }
-    .article-menu:nth-child(2) p::after{
-        animation: slide-in 0.75s 0.3s ease-out forwards, slide-out 0.75s 1.5s ease-out forwards;
-
-
-    }
-    .article-menu :nth-child(2) p::after{
-        animation: slide-in 0.75s 0.6s ease-out forwards, slide-out 0.75s 1.9s ease-out forwards;
-
-    }
-    @keyframes slide-in{
-
-        100% {
-            transform: translateX(0%);
-
-        }
-    }
-    @keyframes slide-out{
-        100% {
-            transform: translateX(100%);
-        }
-    }
-    @keyframes text-appearance{
-        100% {
-            color: black;
-        }
-    }
-
-} 
-*/
 @media only screen and (min-width: 1024px) {
   body {
     max-width: 1440px;
