@@ -101,7 +101,7 @@ main {
         animation-duration: 2s;
        
         /* le code sur check */
-        &:hover, :active{
+        &:hover,:active{
             .prix {
                 transform: translateX(-50px);
                 transition: transform 0.50s ease-in-out;
@@ -112,6 +112,14 @@ main {
                 }
             }
             
+            .description{
+                p {
+                    width: 260px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                 }
+            }
         }
         
         h4 {
@@ -143,8 +151,8 @@ main {
                 transition: transform 0.50s ease-in-out;
                 margin-right: -50px;
              
-              
-           
+
+
            .fa-solid {
             display: flex;
             justify-content: center;
@@ -177,7 +185,7 @@ main {
         line-height: 1.5;
        
         
-     
+    
           }
 
    

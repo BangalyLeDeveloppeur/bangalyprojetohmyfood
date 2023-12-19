@@ -228,6 +228,12 @@ main .article-menu:hover .prix, main .article-menu :active .prix {
 main .article-menu:hover .prix .select-choix, main .article-menu :active .prix .select-choix {
   display: inline;
 }
+main .article-menu:hover .description p, main .article-menu :active .description p {
+  width: 260px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
 main .article-menu h4 {
   font-size: 1.1rem;
   font-family: inter-bold, sans-serif;
