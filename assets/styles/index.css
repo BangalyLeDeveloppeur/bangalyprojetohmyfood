@@ -12,7 +12,7 @@ a {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2rem; /* base */
   font-family: inter-bold, sans-serif;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -28,7 +28,7 @@ h1 {
   background: rgb(206, 132, 223);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #9356DC), color-stop(100%, #FF79DA), color-stop(60%, #99E2D0));
   background: linear-gradient(0deg, #9356DC 2%, #FF79DA 100%, #99E2D0 60%);
-  border-radius: 25px;
+  border-radius: 25px; /* composant */
   height: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -61,7 +61,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 65px;
+  height: 65px; /*composant */
   padding-left: 10px;
   padding-right: 10px;
   background: #F6F6F6;
@@ -81,7 +81,7 @@ h1 {
           transform: scale(1.02);
 }
 .main-btn p {
-  font-weight: bold;
+  font-weight: bold; /*base */
 }
 
 .main-icon {
@@ -113,19 +113,19 @@ article {
 
 body {
   font-family: merr, serif;
-  max-width: 768px;
+  max-width: 768px; /*base */
   width: 95%;
   margin: auto;
 }
 body::before {
   content: "";
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 1;
-  background: rgba(19, 17, 16, 0.753);
+  background: rgba(7, 3, 0, 0.986);
   -webkit-animation: animload 4s ease forwards;
           animation: animload 4s ease forwards;
   -webkit-animation-delay: 2s;
@@ -364,7 +364,7 @@ footer {
   background: rgb(53, 53, 53);
   height: 251px;
   line-height: 25px;
-  margin-top: 64px;
+  margin-top: 64px; /*base */
 }
 footer .menu-footer {
   color: white;
@@ -403,6 +403,7 @@ footer .img {
     font-size: 1.2rem;
   }
 }
+/* media query pour la version desktop */
 @media only screen and (min-width: 1024px) {
   body {
     max-width: 1440px;
@@ -486,19 +487,22 @@ footer .img {
 @-webkit-keyframes animload {
   to {
     opacity: 0;
+    z-index: 0;
   }
 }
 @keyframes animload {
   to {
     opacity: 0;
+    z-index: 0;
   }
 }
 .custom-loader {
   width: 50px;
   height: 12px;
   top: 450px;
-  margin-left: 35%;
-  position: absolute;
+  margin-left: 40%;
+  z-index: 900;
+  position: fixed;
   background: radial-gradient(circle closest-side, #766DF4 90%, rgba(0, 0, 0, 0)) 0 0/33% 100% space;
   -webkit-clip-path: inset(0 100% 0 0);
           clip-path: inset(0 100% 0 0);

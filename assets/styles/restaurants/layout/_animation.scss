@@ -3,6 +3,7 @@
 
     to{
         opacity: 0;
+        z-index: 0;
     }
 }
 
@@ -11,8 +12,9 @@
     width:50px;
     height:12px;
     top: 450px;
-    margin-left: 35%;
-    position: absolute;
+    margin-left: 40%;
+    z-index: 900;
+    position: fixed;
     background: radial-gradient(circle closest-side,#766DF4 90%,#0000) 0 0/33% 100% space;
     clip-path: inset(0 100% 0 0);
     animation:d1 2.5s steps(4) forwards;
@@ -23,4 +25,7 @@
     0%{clip-path: inset(0 -34% 0 0)}
 
     
-}
+} 
+
+
+

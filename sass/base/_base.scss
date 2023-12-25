@@ -1,0 +1,38 @@
+body {
+    
+        font-family: $font2;
+        max-width: 768px;
+        width: 95%;
+        margin: auto;
+    
+}
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    margin: 20px 30px 20px 0;
+}
+
+h1{
+    font-size: 2rem;
+    @include title;
+}
+p {
+    font-weight: bold;
+  }
+/* le code pour le footer */
+footer {
+    background: rgb(53, 53, 53);
+    height: 251px;
+    line-height: 25px;
+}
+article{
+    width: 100%;
+}
+
+main{
+    height: 1567px;
+}

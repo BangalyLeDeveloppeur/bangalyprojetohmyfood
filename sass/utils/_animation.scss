@@ -1,0 +1,47 @@
+
+
+#menu_1 {
+    animation: article-menu 400ms ease-in;
+
+  }
+  
+  #menu_2 {
+    animation: article-menu 600ms ease-in;
+  }
+  
+  #menu_3 {
+    animation: article-menu 800ms ease-in;
+  }
+  
+  #menu_4 {
+    animation: article-menu 1s ease-in;
+  }
+  #menu_5 {
+    animation: article-menu 1.2s ease-in;
+  }
+  #menu_6 {
+    animation: article-menu 1.4s ease-in;
+  }
+  
+  #menu_7 {
+    animation: article-menu 1.6s ease-in;
+  }
+  #menu_8 {
+    animation: article-menun 1.8s ease-in;
+  }
+  #menu_9 {
+    animation: article-menu 2s ease-in;
+  }
+  
+  @keyframes article-menu {
+    0% {
+     animation-delay: 1.5s;
+      opacity: 0;
+      transform: translatey(60px)
+    }
+
+     100% {
+      opacity: 1;
+      transform: translatey(0);
+    }}
+ 
