@@ -8,7 +8,7 @@ main{
         gap: 30px;
         background: #F6F6F6;
         height: 255px;
-        
+
 
         h1{
             font-size: 1.3rem;
@@ -90,8 +90,10 @@ main{
                   }  
                   a {
                     text-decoration: none;
-               
-                  }     
+                    
+                  }    
+                  
+                  
             } 
             
             .palette-menil {
@@ -112,13 +114,13 @@ main{
                 display: none;
                 
             }
+            /* code de survol sur le coeur */
             .coeur {
                 font-size: 2rem;
-                transition: 3s;
+                transition: transform 1.5s ease-in-out;
                 
                 
-                &:hover{
-                    
+                &:hover {
                     .fa-solid{
                         display: inline;
                         cursor: pointer;
@@ -126,17 +128,18 @@ main{
                     }
                     .fa-regular{
                         display: none;
+                        
                     }
                 }
             }
 
             }
             
-
+            /*leffet de survole sur article */
             &:hover {
                 transform: scale(1.01);
-        
-                
+
+
              }
         }
         

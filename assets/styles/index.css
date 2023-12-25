@@ -259,6 +259,7 @@ main .resto .palette {
   height: 281px;
   border-radius: 20px 20px 10px 10px;
   width: 100%;
+  /*leffet de survole sur article */
 }
 main .resto .palette img {
   height: 200px;
@@ -305,6 +306,7 @@ main .resto .palette .palette-menil {
       -ms-flex-align: center;
           align-items: center;
   padding: 16px;
+  /* code de survol sur le coeur */
 }
 main .resto .palette .palette-menil a {
   text-decoration: none;
@@ -318,8 +320,10 @@ main .resto .palette .palette-menil .fa-solid {
 }
 main .resto .palette .palette-menil .coeur {
   font-size: 2rem;
-  -webkit-transition: 3s;
-  transition: 3s;
+  -webkit-transition: -webkit-transform 1.5s ease-in-out;
+  transition: -webkit-transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
 }
 main .resto .palette .palette-menil .coeur:hover .fa-solid {
   display: inline;
