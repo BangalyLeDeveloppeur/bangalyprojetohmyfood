@@ -21,6 +21,7 @@
            
         }
     
+      
     .menu-container{
        margin: 0 160px;
        top: 415px;
@@ -32,6 +33,18 @@
         }
         .menus {
             padding: 0 180px;
+        }
+        
+    }
+}
+&:hover{
+    .prix {
+        transform: translateX(-25px);
+        transition: transform 0.50s ease-in-out;
+        
+        .select-choix {
+            display: inline;
+            
         }
         
     }

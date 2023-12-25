@@ -96,28 +96,7 @@ main {
         margin-top: 20px;
         cursor: pointer;
         animation-duration: 2s;
-       
-        /* le code sur check */
-        &:hover,:active{
-            .prix {
-                transform: translateX(-50px);
-                transition: transform 0.50s ease-in-out;
-                
-                .select-choix {
-                    display: inline;
-                    
-                }
-            }
-            
-            .description{
-                p {
-                    width: 260px;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                    overflow: hidden;
-                 }
-            }
-        }
+        
         
         h4 {
             font-size: 1.1rem;
@@ -146,7 +125,7 @@ main {
                 display: none;
                 background: $colortertiaire;
                 transition: transform 0.50s ease-in-out;
-                margin-right: -50px;
+                margin-right: -25px;
                 border-radius: 0 20px 20px 0;
              
 

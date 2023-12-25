@@ -218,8 +218,8 @@ main .article-menu {
   /* le code sur check */
 }
 main .article-menu:hover .prix, main .article-menu :active .prix {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  -webkit-transform: translateX(-25px);
+          transform: translateX(-25px);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -269,7 +269,7 @@ main .article-menu .prix .select-choix {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  margin-right: -50px;
+  margin-right: -25px;
   border-radius: 0 20px 20px 0;
 }
 main .article-menu .prix .select-choix .fa-solid {
