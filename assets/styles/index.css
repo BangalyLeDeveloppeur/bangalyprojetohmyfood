@@ -390,11 +390,16 @@ footer .menu-footer .footer-ico .footer-ico2 {
   display: flex;
   gap: 10px;
 }
-footer .img {
+footer .menu-footer .img {
   padding: 35px 0 10px 0;
   width: 40%;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
