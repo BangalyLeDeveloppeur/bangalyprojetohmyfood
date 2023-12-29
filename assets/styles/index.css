@@ -6,13 +6,15 @@
   font-family: merr;
   src: url(/assets/fonts/Merriweather-Light.ttf);
 }
-/* les couleurs */
+/* les couleurs de variables */
+/*mes mixins */
+/* color des mes liens */
 a {
   color: black;
 }
 
 h1 {
-  font-size: 2rem; /* base */
+  font-size: 2rem;
   font-family: inter-bold, sans-serif;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -26,9 +28,9 @@ h1 {
 
 .btn {
   background: rgb(206, 132, 223);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #9356DC), color-stop(100%, #FF79DA), color-stop(60%, #99E2D0));
-  background: linear-gradient(0deg, #9356DC 2%, #FF79DA 100%, #99E2D0 60%);
-  border-radius: 25px; /* composant */
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #9356dc), color-stop(100%, #ff79da), color-stop(60%, #99e2d0));
+  background: linear-gradient(0deg, #9356dc 2%, #ff79da 100%, #99e2d0 60%);
+  border-radius: 25px;
   height: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -42,14 +44,6 @@ h1 {
   -webkit-filter: brightness(1.1);
           filter: brightness(1.1);
 }
-.btn:hover {
-  -webkit-box-shadow: 4px 4px 4px rgb(180, 180, 180);
-          box-shadow: 4px 4px 4px rgb(180, 180, 180);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-  -webkit-filter: brightness(1.2);
-          filter: brightness(1.2);
-}
 
 .main-btn {
   display: -webkit-box;
@@ -61,10 +55,10 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 65px; /*composant */
+  height: 65px;
   padding-left: 10px;
   padding-right: 10px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   border-radius: 25px;
   position: relative;
   -webkit-box-shadow: 3px 3px 20px rgb(233, 227, 227);
@@ -75,19 +69,14 @@ h1 {
           transition-duration: 0.75s;
   cursor: pointer;
 }
-.main-btn:hover {
-  background: #99E2D0;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
-}
 .main-btn p {
-  font-weight: bold; /*base */
+  font-weight: bold;
 }
 
 .main-icon {
   height: 20px;
   width: 20px;
-  background: rgb(207, 115, 228);
+  background: #9356dc;
   border-radius: 10px;
   color: white;
   display: -webkit-box;
@@ -113,7 +102,7 @@ article {
 
 body {
   font-family: merr, serif;
-  max-width: 768px; /*base */
+  max-width: 768px;
   width: 95%;
   margin: auto;
 }
@@ -192,7 +181,7 @@ main .main-reserver {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-  background: #F6F6F6;
+  background: #f6f6f6;
   height: 255px;
 }
 main .main-reserver h1 {
@@ -222,7 +211,7 @@ main .main-contenair article .icongrey .fa-solid {
   color: grey;
 }
 main .main-contenair .main-icon2 .fa-solid {
-  color: rgb(207, 115, 228);
+  color: #9356dc;
 }
 main .main-contenair .main-btn .main-icon2 {
   display: -webkit-box;
@@ -259,7 +248,6 @@ main .resto .palette {
   height: 281px;
   border-radius: 20px 20px 10px 10px;
   width: 100%;
-  /*leffet de survole sur article */
 }
 main .resto .palette img {
   height: 200px;
@@ -280,13 +268,14 @@ main .resto .palette .palette-nouveau {
       -ms-flex-align: center;
           align-items: center;
   height: 33px;
-  width: 18%;
-  background: #99E2D0;
-  margin-left: 75%;
+  width: 23%;
+  background: #99e2d0;
+  margin-left: 70%;
   bottom: 200px;
   border-radius: 5px;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  padding: 5px;
 }
 main .resto .palette .palette-nouveau p {
   font-weight: bold;
@@ -306,7 +295,6 @@ main .resto .palette .palette-menil {
       -ms-flex-align: center;
           align-items: center;
   padding: 16px;
-  /* code de survol sur le coeur */
 }
 main .resto .palette .palette-menil a {
   text-decoration: none;
@@ -314,27 +302,6 @@ main .resto .palette .palette-menil a {
 main .resto .palette .palette-menil h1 {
   font-size: 1.3em;
   font-family: merr, serif;
-}
-main .resto .palette .palette-menil .fa-solid {
-  display: none;
-}
-main .resto .palette .palette-menil .coeur {
-  font-size: 2rem;
-  -webkit-transition: -webkit-transform 1.5s ease-in-out;
-  transition: -webkit-transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out;
-}
-main .resto .palette .palette-menil .coeur:hover .fa-solid {
-  display: inline;
-  cursor: pointer;
-}
-main .resto .palette .palette-menil .coeur:hover .fa-regular {
-  display: none;
-}
-main .resto .palette:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
 }
 main .sect-resto {
   display: -webkit-box;
@@ -350,7 +317,7 @@ main .sect-resto {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #F6F6F6;
+  background: #f6f6f6;
   gap: 30px;
 }
 main .sect-resto h2 {
@@ -395,11 +362,6 @@ footer .menu-footer .img {
   width: 40%;
   -webkit-filter: brightness(0) invert(1);
           filter: brightness(0) invert(1);
-}
-footer a {
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -512,7 +474,7 @@ footer a {
   margin-left: 40%;
   z-index: 900;
   position: fixed;
-  background: radial-gradient(circle closest-side, #766DF4 90%, rgba(0, 0, 0, 0)) 0 0/33% 100% space;
+  background: radial-gradient(circle closest-side, #766df4 90%, rgba(0, 0, 0, 0)) 0 0/33% 100% space;
   -webkit-clip-path: inset(0 100% 0 0);
           clip-path: inset(0 100% 0 0);
   -webkit-animation: d1 2.5s steps(4) forwards;
@@ -531,4 +493,50 @@ footer a {
     -webkit-clip-path: inset(0 -34% 0 0);
             clip-path: inset(0 -34% 0 0);
   }
+}
+/* animation de survole sur le button explorer nos restaurant*/
+.btn:hover {
+  -webkit-box-shadow: 4px 4px 4px rgb(180, 180, 180);
+          box-shadow: 4px 4px 4px rgb(180, 180, 180);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+/* effet survol sur les button de fonctionnement */
+.main-btn:hover {
+  background: #99e2d0;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+/*leffet de survole sur article */
+.palette:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+/* animation progressive sur le coeur */
+i {
+  position: absolute;
+  margin-left: -30px;
+  font-size: 2rem;
+}
+
+.fa-solid {
+  opacity: 0;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 1.5s;
+          transition-duration: 1.5s;
+}
+
+.palette-menil .coeur .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
 }/*# sourceMappingURL=index.css.map */
