@@ -528,8 +528,8 @@ i {
   opacity: 0;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 1.5s;
-          transition-duration: 1.5s;
+  -webkit-transition-duration: 1.3s;
+          transition-duration: 1.3s;
 }
 
 .palette-menil .coeur .fa-solid:hover {
