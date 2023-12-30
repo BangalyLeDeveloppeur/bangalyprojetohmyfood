@@ -6,7 +6,7 @@
   font-family: merr;
   src: url(/assets/fonts/Merriweather-Light.ttf);
 }
-/* les couleurs de variables */
+/* les couleurs de mes variables */
 /*mes mixins */
 /* color des mes liens */
 a {
@@ -26,10 +26,11 @@ h1 {
   padding: 0;
 }
 
+/*button explorer nos restaurant*/
 .btn {
   background: rgb(206, 132, 223);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #9356dc), color-stop(100%, #ff79da), color-stop(60%, #99e2d0));
-  background: linear-gradient(0deg, #9356dc 2%, #ff79da 100%, #99e2d0 60%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(2%, #9356DC), color-stop(100%, #ff79da), color-stop(60%, #99e2d0));
+  background: linear-gradient(0deg, #9356DC 2%, #ff79da 100%, #99e2d0 60%);
   border-radius: 25px;
   height: 50px;
   padding-left: 20px;
@@ -45,6 +46,7 @@ h1 {
           filter: brightness(1.1);
 }
 
+/* les button de fonctionnement */
 .main-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -73,10 +75,11 @@ h1 {
   font-weight: bold;
 }
 
+/* icone chiffres */
 .main-icon {
   height: 20px;
   width: 20px;
-  background: #9356dc;
+  background: #9356DC;
   border-radius: 10px;
   color: white;
   display: -webkit-box;
@@ -100,25 +103,20 @@ article {
   width: 100%;
 }
 
+/* le code pour format mobile */
 body {
   font-family: merr, serif;
   max-width: 768px;
   width: 95%;
   margin: auto;
 }
-body::before {
-  content: "";
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  background: rgba(7, 3, 0, 0.986);
-  -webkit-animation: animload 4s ease forwards;
-          animation: animload 4s ease forwards;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+
+/*le footer */
+footer {
+  background: rgb(53, 53, 53);
+  height: 251px;
+  line-height: 25px;
+  margin-top: 64px;
 }
 
 header .header-contenair-logo {
@@ -211,7 +209,7 @@ main .main-contenair article .icongrey .fa-solid {
   color: grey;
 }
 main .main-contenair .main-icon2 .fa-solid {
-  color: #9356dc;
+  color: #9356DC;
 }
 main .main-contenair .main-btn .main-icon2 {
   display: -webkit-box;
@@ -494,6 +492,22 @@ footer .menu-footer .img {
             clip-path: inset(0 -34% 0 0);
   }
 }
+/* animation loader noir */
+body::before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(7, 3, 0, 0.897);
+  -webkit-animation: animload 4s ease forwards;
+          animation: animload 4s ease forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
 /* animation de survole sur le button explorer nos restaurant*/
 .btn:hover {
   -webkit-box-shadow: 4px 4px 4px rgb(180, 180, 180);
@@ -518,13 +532,13 @@ footer .menu-footer .img {
 }
 
 /* animation progressive sur le coeur */
-i {
+.palette-menil .coeur i {
   position: absolute;
   margin-left: -30px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
-.fa-solid {
+.palette-menil .coeur .fa-solid {
   opacity: 0;
   -webkit-transition-property: all;
   transition-property: all;
@@ -535,8 +549,8 @@ i {
 .palette-menil .coeur .fa-solid:hover {
   opacity: 1;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356DC), to(#FF79DA));
-  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9356dc), to(#ff79da));
+  background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
 }/*# sourceMappingURL=index.css.map */

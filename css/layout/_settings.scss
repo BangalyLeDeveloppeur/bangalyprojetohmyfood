@@ -9,17 +9,10 @@
 $fonte1: inter-bold, sans-serif;
 $font2: merr, serif;
 
-/* les couleurs */
+/* les variables de couleurs */
 $colorprimaire: #9356dc;
 $colorsecondaire: #ff79da;
 $colortertiaire: #99e2d0;
-
-$color1: rgb(153, 226, 208);
-$color2: rgb(0, 135, 102);
-$color3: rgb(137, 200, 250);
-$color4: rgb(0, 58, 104);
-$color5: rgb(147, 86, 220);
-$colorbut: rgb(207, 115, 228);
 $color6: #ddd9d9;
 
 //mes mixins
@@ -38,6 +31,22 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
+/* code pour header */
+header {
+  margin: 20px 30px 20px 0;
+}
+
+main {
+  height: 1535px;
+}
+
+footer {
+  background: rgb(53, 53, 53);
+  height: 251px;
+  line-height: 25px;
+}
+/* button explorer nos restaurants */
 .btn {
   background: rgb(206, 132, 223);
   background: linear-gradient(
@@ -56,52 +65,8 @@ h1 {
   cursor: pointer;
   transition: 0.5s;
   position: relative;
-
-  &:hover {
-    box-shadow: 4px 3px 3px rgb(180, 180, 180);
-    transform: scale(1.05);
-  }
 }
-.main-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 65px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: #f6f6f6;
-  border-radius: 25px;
-  position: relative;
-  box-shadow: 3px 3px 20px rgb(233, 227, 227);
-  transition: 0.5s;
-  cursor: pointer;
-
-  &:hover {
-    background: rgba(247, 202, 247, 0.527);
-    transform: scale(1.02);
-  }
-  p {
-    font-weight: bold;
-  }
-}
-
-.main-icon {
-  height: 20px;
-  width: 20px;
-  background: $colorbut;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  flex-direction: row;
-  margin-left: -98%;
-}
-
-article {
-  width: 100%;
-}
+/* code mobile */
 body {
   font-family: $font2;
   max-width: 768px;

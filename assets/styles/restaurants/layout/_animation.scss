@@ -23,6 +23,23 @@
     clip-path: inset(0 -34% 0 0);
   }
 }
+/* animation loader noir */
+body {
+  &::before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: rgba(7, 3, 0, 0.897);
+    animation: animload 4s ease forwards;
+    animation-delay: 2s;
+  }
+}
+
 /* animation de survole sur le button explorer nos restaurant*/
 .btn:hover {
   box-shadow: 4px 4px 4px rgb(180, 180, 180);
@@ -40,21 +57,20 @@
 }
 
 /* animation progressive sur le coeur */
-i {
-    position: absolute;
-    margin-left: -30px;
-    font-size: 2rem;
-  }
-  .fa-solid{
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1.3s;
-  }
-  .palette-menil .coeur
-  .fa-solid:hover{
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    -webkit-background-clip: text;
-  }
+.palette-menil .coeur  i {
+  position: absolute;
+  margin-left: -30px;
+  font-size: 1.8rem;
+}
+ .palette-menil .coeur .fa-solid {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1.3s;
+}
+.palette-menil .coeur .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+}

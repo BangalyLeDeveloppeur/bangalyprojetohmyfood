@@ -1,47 +1,89 @@
-
-
+/* animation progressive sur le coeur */
+.coeur i {
+  position: absolute;
+  margin-left: -30px;
+  font-size: 2rem;
+}
+.coeur .fa-solid {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1.3s;
+}
+.coeur .fa-solid:hover {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+/* afficharge progressive du contenu des menus */
 #menu_1 {
-    animation: article-menu 400ms ease-in;
+  animation: article-menu 400ms ease-in;
+}
 
-  }
-  
-  #menu_2 {
-    animation: article-menu 600ms ease-in;
-  }
-  
-  #menu_3 {
-    animation: article-menu 800ms ease-in;
-  }
-  
-  #menu_4 {
-    animation: article-menu 1s ease-in;
-  }
-  #menu_5 {
-    animation: article-menu 1.2s ease-in;
-  }
-  #menu_6 {
-    animation: article-menu 1.4s ease-in;
-  }
-  
-  #menu_7 {
-    animation: article-menu 1.6s ease-in;
-  }
-  #menu_8 {
-    animation: article-menun 1.8s ease-in;
-  }
-  #menu_9 {
-    animation: article-menu 2s ease-in;
-  }
-  
-  @keyframes article-menu {
-    0% {
-     animation-delay: 1.5s;
-      opacity: 0;
-      transform: translatey(60px)
-    }
+#menu_2 {
+  animation: article-menu 600ms ease-in;
+}
 
-     100% {
-      opacity: 1;
-      transform: translatey(0);
-    }}
- 
+#menu_3 {
+  animation: article-menu 800ms ease-in;
+}
+
+#menu_4 {
+  animation: article-menu 1s ease-in;
+}
+#menu_5 {
+  animation: article-menu 1.2s ease-in;
+}
+#menu_6 {
+  animation: article-menu 1.4s ease-in;
+}
+
+#menu_7 {
+  animation: article-menu 1.6s ease-in;
+}
+#menu_8 {
+  animation: article-menun 1.8s ease-in;
+}
+#menu_9 {
+  animation: article-menu 2s ease-in;
+}
+
+@keyframes article-menu {
+  0% {
+    animation-delay: 1.5s;
+    opacity: 0;
+    transform: translatey(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+/* effet de suvol sur le menu du restaurant */
+.article-menu:hover {
+  .prix .select-choix {
+    display: inline;
+    transition-duration: 0.5s;
+  }
+  /* code pour rogner le texte */
+  .description p {
+    width: 190px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+/* effet au click */
+:active .select-choix {
+  transform: translateX(25px);
+  transition: transform 0.5s ease-in-out;
+  transition-duration: 2s;
+}
+
+/* btn srvol sur le button command */
+.btn:hover {
+  box-shadow: 4px 3px 3px rgb(180, 180, 180);
+  transform: scale(1.05);
+}
