@@ -74,7 +74,10 @@ main {
         display: none;
         background: $colortertiaire;
         border-radius: 0 20px 20px 0;
-       
+        transition: transform 0.8s ease-in-out;
+        transition-delay: 0.2s;
+        transition-duration: 0.5s;
+
         .fa-solid {
           display: flex;
           justify-content: center;
@@ -87,6 +90,7 @@ main {
       }
     }
   }
+  // style pour le button
   .commande {
     display: flex;
     justify-content: center;

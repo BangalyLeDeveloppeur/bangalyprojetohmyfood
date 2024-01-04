@@ -178,6 +178,14 @@ main .article-menu .prix .select-choix {
   display: none;
   background: #99e2d0;
   border-radius: 0 20px 20px 0;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out, -webkit-transform 0.8s ease-in-out;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 main .article-menu .prix .select-choix .fa-solid {
   display: -webkit-box;
@@ -337,12 +345,12 @@ footer .img {
 }
 /* effet de suvol sur le menu du restaurant */
 .article-menu:hover {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   /* code pour rogner le texte */
 }
 .article-menu:hover .prix .select-choix {
   display: inline;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
 }
 .article-menu:hover .description p {
   width: 190px;
@@ -353,14 +361,9 @@ footer .img {
 
 /* effet au click */
 :active .select-choix {
-  -webkit-transform: translateX(25px);
-          transform: translateX(25px);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  border: solid;
 }
 
 /* btn srvol sur le button command */

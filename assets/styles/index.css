@@ -151,7 +151,7 @@ header .header-contenair-location {
           align-items: center;
   height: 50px;
   width: 100%;
-  background: #ddd9d9;
+  background: #EAEAEA;
   gap: 20px;
 }
 header .header-contenair-location input {
@@ -277,7 +277,7 @@ main .resto .palette .palette-nouveau {
 }
 main .resto .palette .palette-nouveau p {
   font-weight: bold;
-  color: #64726e;
+  color: #008766;
 }
 main .resto .palette .palette-nouveau a {
   text-decoration: none;
@@ -531,7 +531,7 @@ body::before {
           transform: scale(1.01);
 }
 
-/* animation progressive sur le coeur */
+/* animation remplissage progressive du coeur */
 .palette-menil .coeur i {
   position: absolute;
   margin-left: -30px;
