@@ -275,43 +275,43 @@ footer .img {
 }
 
 #menu_2 {
-  -webkit-animation: article-menu 600ms ease-in;
-          animation: article-menu 600ms ease-in;
+  -webkit-animation: article-menu 700ms ease-in;
+          animation: article-menu 700ms ease-in;
 }
 
 #menu_3 {
-  -webkit-animation: article-menu 800ms ease-in;
-          animation: article-menu 800ms ease-in;
-}
-
-#menu_4 {
   -webkit-animation: article-menu 1s ease-in;
           animation: article-menu 1s ease-in;
 }
 
+#menu_4 {
+  -webkit-animation: article-menu 1.3s ease-in;
+          animation: article-menu 1.3s ease-in;
+}
+
 #menu_5 {
-  -webkit-animation: article-menu 1.2s ease-in;
-          animation: article-menu 1.2s ease-in;
-}
-
-#menu_6 {
-  -webkit-animation: article-menu 1.4s ease-in;
-          animation: article-menu 1.4s ease-in;
-}
-
-#menu_7 {
   -webkit-animation: article-menu 1.6s ease-in;
           animation: article-menu 1.6s ease-in;
 }
 
+#menu_6 {
+  -webkit-animation: article-menu 1.9s ease-in;
+          animation: article-menu 1.9s ease-in;
+}
+
+#menu_7 {
+  -webkit-animation: article-menu 2.2s ease-in;
+          animation: article-menu 2.2s ease-in;
+}
+
 #menu_8 {
-  -webkit-animation: article-menun 1.8s ease-in;
-          animation: article-menun 1.8s ease-in;
+  -webkit-animation: article-menun 2.5s ease-in;
+          animation: article-menun 2.5s ease-in;
 }
 
 #menu_9 {
-  -webkit-animation: article-menu 2s ease-in;
-          animation: article-menu 2s ease-in;
+  -webkit-animation: article-menu 2.8s ease-in;
+          animation: article-menu 2.8s ease-in;
 }
 
 @-webkit-keyframes article-menu {
@@ -319,8 +319,8 @@ footer .img {
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s;
     opacity: 0;
-    -webkit-transform: translatey(60px);
-            transform: translatey(60px);
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
   }
   100% {
     opacity: 1;
@@ -334,8 +334,8 @@ footer .img {
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s;
     opacity: 0;
-    -webkit-transform: translatey(60px);
-            transform: translatey(60px);
+    -webkit-transform: translatey(100px);
+            transform: translatey(100px);
   }
   100% {
     opacity: 1;
@@ -345,8 +345,6 @@ footer .img {
 }
 /* effet de suvol sur le menu du restaurant */
 .article-menu:hover {
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
   /* code pour rogner le texte */
 }
 .article-menu:hover .prix .select-choix {
