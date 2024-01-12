@@ -119,10 +119,11 @@ footer {
   margin-top: 64px;
 }
 
-header .header-contenair-logo {
+.header-contenair-logo {
   text-align: center;
 }
-header .header-contenair {
+
+.header-contenair {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,11 +136,12 @@ header .header-contenair {
           align-items: center;
   margin: 25px 0 0 0;
 }
-header .header-contenair img {
+.header-contenair img {
   width: 50%;
   padding: 17px;
 }
-header .header-contenair-location {
+
+.header-contenair-location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,13 +156,13 @@ header .header-contenair-location {
   background: #EAEAEA;
   gap: 20px;
 }
-header .header-contenair-location input {
+.header-contenair-location input {
   border: none;
   background: none;
   font-size: 16px;
   font-weight: bold;
 }
-header .header-contenair-location .fa-solid {
+.header-contenair-location .fa-solid {
   margin-left: 25%;
 }
 
@@ -328,11 +330,11 @@ main .Fonctionnement {
   margin: 70px 8px 70px 10px;
 }
 
-footer .menu-footer {
+.menu-footer {
   color: white;
   margin-left: 22px;
 }
-footer .menu-footer .footer-ico {
+.menu-footer .footer-ico {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,13 +344,13 @@ footer .menu-footer .footer-ico {
           flex-direction: column;
   gap: 15px;
 }
-footer .menu-footer .footer-ico .footer-ico2 {
+.menu-footer .footer-ico .footer-ico2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
-footer .menu-footer .img {
+.menu-footer .img {
   padding: 35px 0 10px 0;
   width: 40%;
   -webkit-filter: brightness(0) invert(1);
