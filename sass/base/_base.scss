@@ -68,7 +68,7 @@ main {
         overflow: hidden;
         p {
             @include u.title;
-            margin-right: -70px;
+            margin-right: -65px;
             padding: 19px 9px 0 0;
             transition: transform 0.8s ease-in-out;
             transition-delay: 0.3s;
