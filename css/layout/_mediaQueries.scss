@@ -1,48 +1,78 @@
-@media only screen and (min-width: 1024px) {
-  body {
-    max-width: 1440px;
-    header {
-      .logo {
-        width: 60%;
-        margin-left: -27px;
-        gap: 459px;
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /*code pour le main */
+  main {
+    .main-reserver {
+      h1 {
+        font-size: 1.9rem;
+        width: 75%;
+      }
+      p {
+        font-size: 1.2rem;
       }
     }
   }
-  main {
-    height: 1736px;
-    img {
-      height: 426px;
-      width: 76%;
-      position: absolute;
-      object-fit: cover;
+}
+/* media query pour la version desktop */
+@media only screen and (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+  }
+  header {
+    .header-contenair-location .fa-solid {
+      margin-left: 5%;
     }
-    .menu-container {
-      margin: 0 160px;
-      top: 415px;
-      .titre-menu {
-        padding: 47px 379px;
+  }
+  main {
+    .main-reserver {
+      h1 {
+        font-size: 2.5rem;
+        text-align: center;
       }
-      .menus {
-        padding: 0 180px;
+      p {
+        padding: 0 60px 0 60px;
+        text-align: center;
+      }
+    }
+    .fonctionnement {
+      margin: 0;
+    }
+    .maint-contenair-title {
+      width: 27%;
+    }
+    .main-contenair {
+      flex-direction: row;
+      padding: 0 130px 0 83px;
+      gap: 50px;
+    }
+    .resto {
+      flex-direction: row;
+      gap: 80px;
+    }
+    .sect-resto {
+      height: 600px;
+      padding: 87px;
+      .title {
+        width: 100%;
       }
     }
   }
   footer {
     height: 95px;
-
+    margin-top: 0;
     .menu-footer {
       display: flex;
       align-items: center;
       flex-direction: row-reverse;
       padding-top: 34px;
-      gap: 50px;
+      gap: 100px;
       margin-left: 0;
+
       .footer-ico {
         display: flex;
         flex-direction: row;
         gap: 25px;
       }
+
       .img {
         width: 12%;
         padding: 6px 35px 10px 0;

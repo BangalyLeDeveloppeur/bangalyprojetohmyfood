@@ -9,17 +9,21 @@
 $fonte1: inter-bold, sans-serif;
 $font2: merr, serif;
 
-/* les variables de couleurs */
-$colorprimaire: #9356dc;
+/* les couleurs de mes variables */
+$colorprimaire: #9356DC;
 $colorsecondaire: #ff79da;
 $colortertiaire: #99e2d0;
 $color6: #ddd9d9;
 
-//mes mixins
+/*mes mixins */
 @mixin title {
   font-family: $fonte1;
   padding: 0;
   box-sizing: border-box;
+}
+/* color des mes liens */
+a {
+  color: black;
 }
 
 h1 {
@@ -31,44 +35,78 @@ h1 {
   margin: 0;
   padding: 0;
 }
-
-/* code pour header */
-header {
-  margin: 20px 30px 20px 0;
-}
-
-main {
-  height: 1535px;
-}
-
-footer {
-  background: rgb(53, 53, 53);
-  height: 251px;
-  line-height: 25px;
-}
-/* button explorer nos restaurants */
+/*button explorer nos restaurant*/
 .btn {
   background: rgb(206, 132, 223);
   background: linear-gradient(
     0deg,
-    rgba(206, 132, 223, 1) 0%,
-    rgba(251, 93, 207, 1) 100%,
-    rgba(186, 148, 230, 1) 100%);
+    $colorprimaire 2%,
+    $colorsecondaire 100%,
+    $colortertiaire 60%
+);
+
   border-radius: 25px;
   height: 50px;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
   border: 5px;
   font-size: 1.2rem;
   color: white;
   cursor: pointer;
   transition: 0.5s;
   position: relative;
+  filter: brightness(1.1);
 }
-/* code mobile */
+/* les button de fonctionnement */
+.main-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #f6f6f6;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 3px 3px 20px rgb(233, 227, 227);
+  transition: 0.5s;
+  transition-duration: 0.75s;
+  cursor: pointer;
+
+  p {
+    font-weight: bold;
+  }
+}
+/* icone chiffres */
+.main-icon {
+  height: 20px;
+  width: 20px;
+  background: $colorprimaire;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: row;
+  margin-left: -98%;
+}
+
+article {
+  width: 100%;
+}
+/* le code pour format mobile */
 body {
   font-family: $font2;
   max-width: 768px;
   width: 95%;
   margin: auto;
+}
+
+/*le footer */
+footer {
+  background: rgb(53, 53, 53);
+  height: 251px;
+  line-height: 25px;
+  margin-top: 64px;
 }

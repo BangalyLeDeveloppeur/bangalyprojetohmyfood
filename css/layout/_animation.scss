@@ -1,88 +1,76 @@
-/* animation progressive sur le coeur */
-.coeur i {
+@keyframes animload {
+  to {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+
+.custom-loader {
+  width: 50px;
+  height: 12px;
+  top: 450px;
+  margin-left: 40%;
+  z-index: 900;
+  position: fixed;
+  background: radial-gradient(circle closest-side, #766df4 90%, #0000) 0 0/33%
+    100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: d1 2.5s steps(4) forwards;
+}
+
+@keyframes d1 {
+  0% {
+    clip-path: inset(0 -34% 0 0);
+  }
+}
+/* animation loader noir */
+body {
+  &::before {
+    content: "";
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background: rgba(7, 3, 0, 0.897);
+    animation: animload 4s ease forwards;
+    animation-delay: 2s;
+  }
+}
+
+/* animation de survole sur le button explorer nos restaurant*/
+.btn:hover {
+  box-shadow: 4px 4px 4px rgb(180, 180, 180);
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+/* effet survol sur les button de fonctionnement */
+.main-btn:hover {
+  background: #99e2d0;
+  transform: scale(1.02);
+}
+/*leffet de survole sur article */
+.palette:hover {
+  transform: scale(1.01);
+}
+
+/* animation remplissage progressive du coeur */
+.palette-menil .coeur  i {
   position: absolute;
   margin-left: -30px;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
-.coeur .fa-solid {
+ .palette-menil .coeur .fa-solid {
   opacity: 0;
   transition-property: all;
   transition-duration: 1.3s;
 }
-.coeur .fa-solid:hover {
+.palette-menil .coeur .fa-solid:hover {
   opacity: 1;
   color: transparent;
   background-image: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
-}
-/* afficharge progressive du contenu des menus */
-#menu_1 {
-  animation: article-menu 400ms ease-in;
-}
-
-#menu_2 {
-  animation: article-menu 700ms ease-in;
-}
-
-#menu_3 {
-  animation: article-menu 1s ease-in;
-}
-
-#menu_4 {
-  animation: article-menu 1.3s ease-in;
-}
-#menu_5 {
-  animation: article-menu 1.6s ease-in;
-}
-#menu_6 {
-  animation: article-menu 1.9s ease-in;
-}
-
-#menu_7 {
-  animation: article-menu 2.2s ease-in;
-}
-#menu_8 {
-  animation: article-menun 2.5s ease-in;
-}
-#menu_9 {
-  animation: article-menu 2.8s ease-in;
-}
-
-@keyframes article-menu {
-  0% {
-    animation-delay: 1.5s;
-    opacity: 0;
-    transform: translatey(100px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translatey(0);
-  }
-}
-/* effet de suvol sur le menu du restaurant */
-.article-menu:hover {
-  
-  .prix .select-choix {
-    display: inline;
-  }
-  /* code pour rogner le texte */
-  .description p {
-    width: 190px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-}
-/* effet au click */
-:active .select-choix {
-  transform: translateX(20px);
-  border: solid;
-}
-
-/* btn srvol sur le button command */
-.btn:hover {
-  box-shadow: 4px 3px 3px rgb(180, 180, 180);
-  transform: scale(1.05);
 }
