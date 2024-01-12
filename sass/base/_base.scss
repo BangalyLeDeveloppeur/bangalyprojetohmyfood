@@ -1,0 +1,111 @@
+@use '../utils/settings' as u;
+
+main {
+    .entrees {
+      margin: 0 0 53px;
+    }
+    .plats {
+      margin: 0 0 53px;
+    }
+    .menu-container {
+      background: rgb(246, 246, 246);
+      position: relative;
+      top: 226px;
+      border-radius: 50px 50px 0 0;
+      padding: 0 10px;
+      .articles {
+        border: none;
+        margin: 20px 0 0 0;
+        h3 {
+          font-weight: normal;
+        }
+      }
+    }
+    img {
+      height: 286px;
+      width: 95%;
+      position: absolute;
+      object-fit: cover;
+    }
+    .titre-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 47px 53px 47px 13px;
+    }
+    .coeur {
+      margin-top: -25px;
+    }
+    h3 {
+      text-transform: uppercase;
+    }
+    .bar-souligne {
+      width: 56px;
+      height: 4px;
+      background: #99e2d0;
+      margin: 3px;
+    }
+    /* code pour article-menu */
+    .article-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+      background: rgb(255, 255, 255);
+      margin-bottom: 10px;
+      border-radius: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+      animation-duration: 2s;
+      h4 {
+        font-size: 1.1rem;
+        @include u.title;
+      }
+      .prix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        p {
+            @include u.title;
+            margin-right: -70px;
+            padding: 19px 9px 0 0;
+            transition: transform 0.8s ease-in-out;
+            transition-delay: 0.3s;
+            transition-duration: 0.5s;
+        }
+        /* code pour le input choix */
+        .select-choix {
+          width: 70px;
+          height: 73px;
+          background: #99e2d0;
+          border-radius: 0 20px 20px 0;
+          transform: translateX(80px);
+          transition: transform 0.5s ease-in-out;
+          transition-duration: 0.2s;
+  
+          .fa-solid {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            border: none;
+            border-radius: 15px;
+            font-size: 2rem;
+            color: white;
+          }
+        }
+      }
+    }
+    // style pour le button
+    .commande {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 33px;
+    }
+    .description {
+      margin-left: 15px;
+      line-height: 1.5;
+    }
+  }
+  

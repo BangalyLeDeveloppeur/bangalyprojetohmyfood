@@ -1,0 +1,92 @@
+/* animation progressive sur le coeur */
+.coeur i {
+    position: absolute;
+    margin-left: -30px;
+    font-size: 2rem;
+  }
+  .coeur .fa-solid {
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1.3s;
+  }
+  .coeur .fa-solid:hover {
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(#9356dc, #ff79da);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  /* afficharge progressive du contenu des menus */
+  #menu_1 {
+    animation: article-menu 400ms ease-in;
+  }
+  
+  #menu_2 {
+    animation: article-menu 700ms ease-in;
+  }
+  
+  #menu_3 {
+    animation: article-menu 1s ease-in;
+  }
+  
+  #menu_4 {
+    animation: article-menu 1.3s ease-in;
+  }
+  #menu_5 {
+    animation: article-menu 1.6s ease-in;
+  }
+  #menu_6 {
+    animation: article-menu 1.9s ease-in;
+  }
+  
+  #menu_7 {
+    animation: article-menu 2.2s ease-in;
+  }
+  #menu_8 {
+    animation: article-menun 2.5s ease-in;
+  }
+  #menu_9 {
+    animation: article-menu 2.8s ease-in;
+  }
+  
+  @keyframes article-menu {
+    0% {
+      animation-delay: 1.5s;
+      opacity: 0;
+      transform: translatey(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translatey(0);
+    }
+  }
+  /* effet de suvol sur le menu du restaurant */
+  .article-menu:hover {
+    margin-right: 0;
+    .prix .select-choix {
+        transform: translateX(0);
+    }
+    .prix p{
+        margin-right: 0;
+    }
+    /* code pour rogner le texte */
+    .description p {
+      width: 190px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  /* effet au click */
+  :active.select-choix {
+    transform: translateX(0);
+    border: solid;
+  }
+  
+  /* btn srvol sur le button command */
+  .btn:hover {
+    box-shadow: 4px 3px 3px rgb(180, 180, 180);
+    transform: scale(1.05);
+  }
+  

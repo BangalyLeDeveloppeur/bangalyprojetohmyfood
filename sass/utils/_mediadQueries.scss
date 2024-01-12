@@ -1,0 +1,56 @@
+@media only screen and (min-width: 1024px) {
+    body {
+      max-width: 1440px;
+      header {
+        .logo {
+          width: 60%;
+          margin-left: -27px;
+          gap: 459px;
+        }
+      }
+    }
+    main {
+      height: 1736px;
+      img {
+        height: 426px;
+        width: 76%;
+        position: absolute;
+        object-fit: cover;
+      }
+      .menu-container {
+        margin: 0 160px;
+        top: 415px;
+        .titre-menu {
+          padding: 47px 379px;
+        }
+        .menus {
+          padding: 0 180px;
+        }
+      }
+    }
+    footer {
+      height: 95px;
+  
+      .menu-footer {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding-top: 34px;
+        gap: 50px;
+        margin-left: 0;
+        .footer-ico {
+          display: flex;
+          flex-direction: row;
+          gap: 25px;
+        }
+        .img {
+          width: 12%;
+          padding: 6px 35px 10px 0;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  
